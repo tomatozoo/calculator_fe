@@ -84,9 +84,22 @@ table {
     width:100%;
     border-collapse:collapse;
 }
-td {
+td th {
     padding:5px 10px;
     text-align:center;
+}
+
+#equal {
+    background-color:blue;
+}
+#equal:hover {
+    background-color:aquamarine;
+}
+td:hover {
+    background-color: #ddd;
+}
+th:hover {
+    background-color: #ddd;
 }
 .calculator_table {
     table-layout:fixed;
