@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/x-mathjax-config">
-            var output=''; 
+            output='hi'; 
             MathJax.Hub.Config({
               tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script> 
@@ -57,11 +57,12 @@
             <script type="text/javascript" src="javascript.js"></script>
         </header>
         <main>
-            <div class="main_output" id="display" value="">
+            <div class="main_output" id="display_of" value="">
                 <script>
-                    var output = 1;
-                    document.write(output);
+                    text = output;
+                    document.write(text);
                 </script>
+                <h1>hi</h1>
             </div>
             <table class = "calculator_table" border="1">
                 <th> $$ MC $$</th>
@@ -84,36 +85,36 @@
                     </td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick=add('/')>
+                    <td onclick="output = output+'/';">
                         $$ 1/x $$
                     </td>
-                    <td onclick=add('^')>$$ x^2 $$</td>
+                    <td onclick="output = output+'^';">$$ x^2 $$</td>
                     <td>$$ x^2 $$</td>
-                    <td onclick=add('%')>$$ \div $$</td>
+                    <td onclick="output = output+'%';">$$ \div $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick=add('7')>$$ 7 $$</td>
-                    <td onclick=add('8')>$$ 8 $$</td>
-                    <td onclick=add('9')>$$ 9 $$</td>
-                    <td onclick=add('*')>$$ \times $$</td>
+                    <td onclick="output = output+'7';">$$ 7 $$</td>
+                    <td onclick="output = output+'8';">$$ 8 $$</td>
+                    <td onclick="output = output+'9';">$$ 9 $$</td>
+                    <td onclick="output = output+'*';">$$ \times $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick=add('4')>$$ 4 $$</td>
-                    <td onclick=add('5')>$$ 5 $$</td>
-                    <td onclick=add('6')>$$ 6 $$</td>
-                    <td onclick=add('-')>$$ - $$</td>
+                    <td onclick="output = output+'4';">$$ 4 $$</td>
+                    <td onclick="output = output+'5';">$$ 5 $$</td>
+                    <td onclick="output = output+'6';">$$ 6 $$</td>
+                    <td onclick="output = output+'-';">$$ - $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick=add('1')>$$ 1 $$</td>
-                    <td onclick=add('2')>$$ 2 $$</td>
-                    <td onclick=add('3')>$$ 3 $$</td>
-                    <td onclick=add('+')>$$ + $$</td>
+                    <td onclick="output = output+'1';">$$ 1 $$</td>
+                    <td onclick="output = output+'2';">$$ 2 $$</td>
+                    <td onclick="output = output+'3';">$$ 3 $$</td>
+                    <td onclick="output = output+'+';">$$ + $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick=add('1')>$$ +/- $$</td>
-                    <td onclick=add('0')>$$ 0 $$</td>
-                    <td onclick=add('.')>$$ . $$</td>
-                    <td id="equal" onclick=add('=')>$$ = $$</td>
+                    <td onclick="output = output+'1';">$$ +/- $$</td>
+                    <td onclick="output = output+'0';">$$ 0 $$</td>
+                    <td onclick="output = output+'.';">$$ . $$</td>
+                    <td id="equal" onclick='alert(output)'>$$ = $$</td>
                 </tr><!-- 두번째 줄 끝 -->
             </table>
         </main>
