@@ -58,16 +58,7 @@
         </header>
         <main>
             <div class="main_output" id="display_of" value="">
-                <script>
-                    text = output;
-                    document.write(text);
-                </script>
-                <h1>
-                    <script>
-                        text = output;
-                        document.write(text);
-                    </script>
-                </h1>
+                <input type="text" id="display" value="output">
             </div>
             <table class = "calculator_table" border="1">
                 <th> $$ MC $$</th>
@@ -85,41 +76,43 @@
                     <td>
                         $$ C $$
                     </td>
-                    <td>
-                        <i class="fas fa-backspace"></i>
+                    <td colspan="2">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>                    
                     </td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick="output = output+'/';">
+                    <td onclick="output = output+'/';add('/');">
                         $$ 1/x $$
                     </td>
-                    <td onclick="output = output+'^';">$$ x^2 $$</td>
+                    <td onclick="output = output+'^';add('^');">$$ x^2 $$</td>
                     <td>$$ x^2 $$</td>
-                    <td onclick="output = output+'%';">$$ \div $$</td>
+                    <td colspan="2" onclick="output = output+'%';add('%');">$$ \div $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick="output = output+'7';">$$ 7 $$</td>
-                    <td onclick="output = output+'8';">$$ 8 $$</td>
-                    <td onclick="output = output+'9';">$$ 9 $$</td>
-                    <td onclick="output = output+'*';">$$ \times $$</td>
+                    <td onclick="output = output+'7';add('7');">$$ 7 $$</td>
+                    <td onclick="output = output+'8';add('8');">$$ 8 $$</td>
+                    <td onclick="output = output+'9';add('9');">$$ 9 $$</td>
+                    <td colspan="2" onclick="output = output+'*';add('*');">$$ \times $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick="output = output+'4';">$$ 4 $$</td>
-                    <td onclick="output = output+'5';">$$ 5 $$</td>
-                    <td onclick="output = output+'6';">$$ 6 $$</td>
-                    <td onclick="output = output+'-';">$$ - $$</td>
+                    <td onclick="output = output+'4';add('4');">$$ 4 $$</td>
+                    <td onclick="output = output+'5';add('5');">$$ 5 $$</td>
+                    <td onclick="output = output+'6';add('6');">$$ 6 $$</td>
+                    <td colspan="2" onclick="output = output+'-';add('-');">$$ - $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick="output = output+'1';">$$ 1 $$</td>
-                    <td onclick="output = output+'2';">$$ 2 $$</td>
-                    <td onclick="output = output+'3';">$$ 3 $$</td>
-                    <td onclick="output = output+'+';">$$ + $$</td>
+                    <td onclick="output = output+'1';add('1');">$$ 1 $$</td>
+                    <td onclick="output = output+'2';add('2');">$$ 2 $$</td>
+                    <td onclick="output = output+'3';add('3');">$$ 3 $$</td>
+                    <td colspan="2" onclick="output = output+'+';add('+');">$$ + $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
-                    <td onclick="output = output+'1';">$$ +/- $$</td>
-                    <td onclick="output = output+'0';">$$ 0 $$</td>
-                    <td onclick="output = output+'.';">$$ . $$</td>
-                    <td id="equal" onclick='alert(output)'>$$ = $$</td>
+                    <td onclick="output = output+'1';add('1');">$$ +/- $$</td>
+                    <td onclick="output = output+'0';add('0');">$$ 0 $$</td>
+                    <td onclick="output = output+'.';add('.');">$$ . $$</td>
+                    <td colspan="2" id="equal" onclick='alert(output);'>$$ = $$</td>
                 </tr><!-- 두번째 줄 끝 -->
             </table>
         </main>

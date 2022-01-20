@@ -53,7 +53,9 @@
     color: white;
   }
 
-
+input {
+    text-align:right;
+}
 /* Style buttons */
 .btn {
     background-color: DodgerBlue; /* Blue background */
