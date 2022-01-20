@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login_page</title> <!-- title for html page -->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
+    <body class="calculator">
+        <header>
+            <div class="container">
+                <div class="navigation">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div id="myLinks">
+                        <br>
+                        <br>
+                        <h4 id = "calculator_nav">계산기</h4>
+                        <a id="standard_nav" href="#standard">표준</a>
+                        <a href="#enginerring">공학용</a>
+                        <a href="#graph">그래프</a>
+                        <a href="#programmer">프로그래머</a>
+                        <a href="#date">날짜 계산</a>
+                        <h4 id="convertor_nav">변환기</h4>
+                        <a href="#About">통화 환율</a>
+                        <a href="#About">부피</a>
+                        <a href="#About">길이</a>
+                        <a href="#About">무게 및 질량</a>
+                        <a href="#About">온도</a>
+                        <a href="#About">에너지</a>
+                        <a href="#About">면적</a>
+                        <a href="#About">속도</a>
+                        <a href="#About">시간</a>
+                        <a href="#About">일률</a>
+                        <a href="#About">데이터</a>
+                        <a href="#About">압력</a>
+                        <a href="#About">각도</a>
+                    </div>
+                    <!-- #news -->
+                </div>
+                <div class="navigation1">   
+                    <button class="btn"><i class="fa fa-home"></i></button>
+                </div>
+                <div class="navigation2">
+                    <h3>표준</h3>
+                </div>
+            </div>
+            <script type="text/javascript" src="javascript.js"></script>
+        </header>
+        <main>
+            <div class="main_output">
+                <script>
+                    document.write(1.big());
+                </script>
+            </div>
+            <table class = "calculator_table" border="1">
+                <th> $$ MC $$</th>
+                <th> $$ MR $$</th>
+                <th>$$ M+ $$</th>
+                <th>$$ M- $$</th>
+                <th>$$ MS $$</th>
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>
+                        $$ \% $$
+                    </td>
+                    <td>
+                        $$ CE $$
+                    </td>
+                    <td>
+                        $$ C $$
+                    </td>
+                    <td>
+                        <i class="fas fa-backspace"></i>
+                    </td>
+                </tr><!-- 두번째 줄 끝 -->
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>
+                        $$ 1/x $$
+                    </td>
+                    <td>$$ x^2 $$</td>
+                    <td>$$ x^2 $$</td>
+                    <td>$$ \div $$</td>
+                </tr><!-- 두번째 줄 끝 -->
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>$$ 7 $$</td>
+                    <td>$$ 8 $$</td>
+                    <td>$$ 9 $$</td>
+                    <td>$$ \times $$</td>
+                </tr><!-- 두번째 줄 끝 -->
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>$$ 4 $$</td>
+                    <td>$$ 5 $$</td>
+                    <td>$$ 6 $$</td>
+                    <td>$$ - $$</td>
+                </tr><!-- 두번째 줄 끝 -->
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>$$ 1 $$</td>
+                    <td>$$ 2 $$</td>
+                    <td>$$ 3 $$</td>
+                    <td>$$ + $$</td>
+                </tr><!-- 두번째 줄 끝 -->
+                <tr><!-- 두번째 줄 시작 -->
+                    <td>$$ 1 $$</td>
+                    <td>$$ 0 $$</td>
+                    <td>$$ 3 $$</td>
+                    <td>$$ = $$</td>
+                </tr><!-- 두번째 줄 끝 -->
+            </table>
+        </main>
+    </body>
+</html>
