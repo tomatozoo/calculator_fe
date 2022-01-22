@@ -13,3 +13,29 @@ function add(char) {
   display.value = display.value + char;
   return char;
 }
+
+function calculate(string){
+  let inte = eval(string);
+  var display = document.getElementById('display_outcome');
+  display.value = inte;
+  return inte;
+}
+
+function backspace(string){
+
+  return string.substring(0, string.length-1);
+}
+
+
+function add_backspace() {
+  var display = document.getElementById('display');
+  display.value = display.value.substring(0, display.value.length-1);
+  return char;
+}
+
+
+function c() {
+  var display = document.getElementById('display');
+  display.value = '';
+  return char;
+}

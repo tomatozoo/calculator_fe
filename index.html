@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/x-mathjax-config">
-            output='hi'; 
+            output=''; 
             MathJax.Hub.Config({
               tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script> 
@@ -51,35 +51,29 @@
                     <button class="btn"><i class="fa fa-home"></i></button>
                 </div>
                 <div class="navigation2">
-                    <h3>표준</h3>
+                    <h3></h3>
                 </div>
             </div>
             <script type="text/javascript" src="javascript.js"></script>
         </header>
         <main>
             <div class="main_output" id="display_of" value="">
-                <input type="text" id="display" value="output">
+                <input title="계산식" class = "output_1" type="text" id="display" value="" disabled>
+                <input title="계산결과" class = "output_1" type="text" id="display_outcome" value="" disabled>
             </div>
             <table class = "calculator_table" border="1">
-                <th> $$ MC $$</th>
-                <th> $$ MR $$</th>
-                <th>$$ M+ $$</th>
-                <th>$$ M- $$</th>
-                <th>$$ MS $$</th>
                 <tr><!-- 두번째 줄 시작 -->
-                    <td>
+                    <td onclick="output = output+'%';add('%');">
                         $$ \% $$
                     </td>
-                    <td>
+                    <td onclick="output=backspace(output);add_backspace();";>
                         $$ CE $$
                     </td>
-                    <td>
+                    <td colspan="2" onclick="output = '';c();">
                         $$ C $$
                     </td>
                     <td colspan="2">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>                    
+                        <button class="btn" onclick="output=backspace(output);add_backspace();"><i class="fab fa-r-project"></i></button>              
                     </td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
@@ -87,7 +81,7 @@
                         $$ 1/x $$
                     </td>
                     <td onclick="output = output+'^';add('^');">$$ x^2 $$</td>
-                    <td>$$ x^2 $$</td>
+                    <td>$$ \sqrt{x} $$</td>
                     <td colspan="2" onclick="output = output+'%';add('%');">$$ \div $$</td>
                 </tr><!-- 두번째 줄 끝 -->
                 <tr><!-- 두번째 줄 시작 -->
@@ -112,7 +106,7 @@
                     <td onclick="output = output+'1';add('1');">$$ +/- $$</td>
                     <td onclick="output = output+'0';add('0');">$$ 0 $$</td>
                     <td onclick="output = output+'.';add('.');">$$ . $$</td>
-                    <td colspan="2" id="equal" onclick='alert(output);'>$$ = $$</td>
+                    <td colspan="2" id="equal" onclick='calculate(output);'>$$ = $$</td>
                 </tr><!-- 두번째 줄 끝 -->
             </table>
         </main>

@@ -1,17 +1,17 @@
 /*navigation menu*/
 .container {
-    background-color: #04AA6D;
+    background-color: #6200EE;
     color: white;
     display:grid;
     grid-template-columns: auto auto auto;
 }
 .container:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #FFFFFF;
+    color: #232100;
 }
 .navigation {
     overflow: hidden;
-    background-color: #333;
+    background-color: #6200EE;
     position: relative;
 }
 /*hide*/
@@ -20,7 +20,7 @@
 }
 /*style navigation menu links*/
 .navigation a {
-    color: white;
+    color: #FFFFFF;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -29,7 +29,7 @@
 
 /*style hamburger menu*/
 .navigation a.icon {
-    background: black;
+    background: #3700B3;
     display: block;
     position: absolute;
     left: 0;
@@ -43,13 +43,13 @@
 }
 /*grey background color when mouse-over*/
 .navigation a:hover {
-    background-color: #ddd;
+    background-color: #FFFFFF;
     color: black;
   }
 
 /*active link*/
 .active {
-    background-color: #04AA6D;
+    background-color: #FFFFFF;
     color: white;
   }
 
@@ -58,57 +58,98 @@ input {
 }
 /* Style buttons */
 .btn {
-    background-color: DodgerBlue; /* Blue background */
+    background-color: #232100; /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
     padding: 12px 16px; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-  }
-  
-  /* Darker background on mouse-over */
-.btn:hover {
-    background-color: RoyalBlue;
-  }
+}
 
+.btn:hover {
+    background-color: #FFFFFF;
+    color:black;
+  }
+.fab fa-r-project {
+    color:white;
+}
 
 .main_output {
     text-align:right;
-    background-color:#ddd;
-    display:block;
+    background-color:#FFFFFF;
     border:none;
     padding:10px;
     height:200px;
     outline:none;
-
+    display:grid;
+    grid-template-rows:1fr 1fr;
 }
 table {
+    padding:10px;
     width:100%;
     border-collapse:collapse;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 10px;
 }
-td th {
+td {
+    display:grid;
+    border : 1px solid black;
+    grid-template-columns:1fr 1fr 1fr 1fr;
     padding:5px 10px;
     text-align:center;
 }
-
+th {
+    padding:5px 10px;
+    text-align:center;
+}
+tr {
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
 #equal {
-    background-color:blue;
+    background-color:#6200EE;
+    color:#FFFFFF;
 }
 #equal:hover {
-    background-color:aquamarine;
+    background-color:#FFFFFF;
+    color:#000000;
 }
 td:hover {
-    background-color: #ddd;
+    background-color: #6200EE;
+    color:#FFFFFF;
 }
 th:hover {
-    background-color: #ddd;
+    background-color: #FFFFFF;
 }
 .calculator_table {
     table-layout:fixed;
     width:100%;
     height:auto;
     display:block;
-    border:1px dashed;
+    border:none;
     padding:10px;
+}
 
+#display {
+    font-size:x-large;
+    background-color:#FFFFFF;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid black;
+}
+#display_outcome {
+    font-size:x-large;
+    background-color:#FFFFFF;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid black;
 }
